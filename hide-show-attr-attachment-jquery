@@ -1,0 +1,17 @@
+#Add or Remove Attribute using jQuery toggle to Hide/Show an item
+#Input Field also.
+
+#Basic
+$('#graphFrame').toggle(function(){
+     var $this = $(this);
+    $this.is(":visible") ? $this.attr('src', 'graph1.php') : $this.removeAttr('src')
+});
+
+#My Code
+$("#amount_percentage_cap").click(function(){
+    $('.cap').toggle(function(){
+        var $this = $('.cap').find('input');
+        $this.is(":visible") ? $this.attr('required', true) : $this.removeAttr('required')
+    });
+});
+
